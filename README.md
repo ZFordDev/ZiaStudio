@@ -22,6 +22,7 @@ Coming soon
 ```
 > You made it here early.
 > Nothing to see just yet 😅 but the first version is on the way.
+>
 > — ZFordDev
 ```
 
@@ -64,11 +65,9 @@ ZiaStudio/
 ├── assets/                # Icons, banners, static media
 │
 ├── src/
-│   ├── modules/
-│   │   ├── ai/            # Chat engine, local/cloud backends, Ollama integration
-│   │   ├── ui/            # Theme, sidebar, chat history, settings
-│   │   └── system/        # Storage, updater, versioning
-│   │
+│   ├── ai/            # Chat engine, local/cloud backends, Ollama in
+│   ├── ui/            # Theme, sidebar, chat history, settings
+│   ├── system/        # Storage, updater, versioning
 │   └── styles/            # Tailwind input/output + theme styles
 ```
 
@@ -87,6 +86,7 @@ Download the latest Windows installer:
 ```bash
 npm install
 npm run build
+npm start
 ```
 
 ---
