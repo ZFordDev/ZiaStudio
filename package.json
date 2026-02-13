@@ -1,36 +1,25 @@
 {
   "name": "ziastudio",
-  "version": "0.1.2",
-  "buildStage": "Development",
-  "releaseDate": "2026-02-08",
-  "description": "AI chat desktop application",
-  "homepage": "https://github.com/ZFordDev/ZiaStudio#readme",
-  "bugs": {
-    "url": "https://github.com/ZFordDev/ZiaStudio/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ZFordDev/ZiaStudio.git"
-  },
-  "license": "MIT",
-  "author": "StaxDash",
-  "type": "commonjs",
-  "main": "main.js",
-
+  "version": "0.1.0",
+  "description": "ZiaStudio — Extensible AI Runtime and Addon Platform",
+  "main": "dist/main/app.js",
+  "author": "ZetoLabs",
+  "license": "MPL-2.0",
   "scripts": {
+    "dev": "tsc --watch & electron .",
+    "build": "tsc",
     "start": "electron .",
-    "bundle": "node build.js",
-    "build:css": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css",
-    "build:js": "esbuild src/scripts.js --bundle --outfile=src/dist/bundle.js --platform=browser",
-    "build": "npm run build:css && npm run build:js",
-    "dev": "npm run build && electron ."
+    "clean": "rm -rf dist"
   },
-
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "electron": "^31.0.0"
+  },
   "devDependencies": {
-    "electron": "^40.2.1",
-    "electron-builder": "^26.7.0",
-    "esbuild": "^0.27.3",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/postcss": "^4.0.0"
+    "@types/ajv": "^0.0.5",
+    "@types/electron": "^1.6.0",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
   }
 }

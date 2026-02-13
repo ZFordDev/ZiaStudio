@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+
+    "baseUrl": "./src",
+    "paths": {
+      "@core/*": ["core/*"],
+      "@api/*": ["core/api/*"],
+      "@runtime/*": ["core/runtime/*"],
+      "@registry/*": ["core/registry/*"],
+      "@system/*": ["core/system/*"],
+      "@env/*": ["core/env/*"],
+      "@main/*": ["main/*"],
+      "@preload/*": ["preload/*"],
+      "@renderer/*": ["renderer/*"],
+      "@tools/*": ["tools/*"]
+    }
+  },
+
+  "include": ["src/**/*", "src/preload/global.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}

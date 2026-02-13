@@ -1,0 +1,51 @@
+{
+  "id": "default",
+  "name": "Default Experience",
+  "version": "1.0.0", 
+  "description": "Core UI and providers for ZiaStudio.",
+  "author": "ZetoLabs",
+  "license": "MPL-2.0", 
+
+  "apiVersion": 1,
+
+  "entrypoints": {
+    "providers": [
+      "AI_IN/LOCAL/OLLAMA.js",
+      "AI_IN/CLOUD/GEMINI.js"
+    ],
+
+    "outputs": [
+      "AI_OUT/DISCORD.js",
+      "AI_OUT/SNAPDOCK.js"
+    ],
+
+    "ui": {
+      "chat": "UI/COMP/CHAT.js",
+      "settings": "UI/COMP/SETTINGS.js",
+      "sidebarLeft": null,
+      "sidebarRight": null, 
+      "footer": null 
+    },
+
+    "themes": [
+      "UI/THEME/THEME-DARK.css"
+    ],
+
+    "config": [
+      "CONFIG/SETTINGS.js",
+      "CONFIG/HISTORY.js"
+    ]
+  },
+
+  "permissions": {
+    "filesystem": false,
+    "network": true,
+    "clipboard": false
+  },
+
+  "marketplace": {
+    "tags": ["core", "ui", "provider"],
+    "icon": "icon.png",
+    "homepage": "https://ziastudio.app"
+  }
+}

@@ -1,3 +1,5 @@
 # the usual suspects
 node_modules
-dist
+dist/
+OLD/
+.env

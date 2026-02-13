@@ -1,0 +1,13 @@
+body {
+  background: #111;
+  color: #eee;
+  font-family: sans-serif;
+}
+
+.chat-container {
+  padding: 20px;
+}
+
+.settings-container {
+  padding: 20px;
+}
